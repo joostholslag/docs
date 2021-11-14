@@ -1,34 +1,41 @@
 # Table of contents
 
-* [The Medblocks Stack](README.md)
+* [Introduction](README.md)
+
+## Medblocks
+
+* [Quick Start](medblocks/quick-start.md)
+* [Concepts](medblocks/concepts.md)
+* [OAuth2 with SMART](medblocks/oauth2-with-smart.md)
+* [openEHR](medblocks/openehr.md)
+* [FHIR](medblocks/fhir.md)
+* [SNOMED CT](medblocks/snomed-ct.md)
+* [Access Control](medblocks/access-control.md)
+* [Containers](medblocks/containers.md)
 
 ## Medblocks UI
 
-* [Medblocks UI](medblocks-ui/medblocks-ui.md)
+* [Quick Start](medblocks-ui/quick-start.md)
+* [Concepts](medblocks-ui/concepts.md)
+* [VSCode Extension](medblocks-ui/vscode-extension.md)
+* [openEHR Compositions](medblocks-ui/openehr-compositions.md)
+* [FHIR Resources](medblocks-ui/fhir-resources.md)
+* [SNOMED Terminology](medblocks-ui/snomed-terminology.md)
+* [Authentication](medblocks-ui/authentication.md)
 
 ## Guides
 
-* [Creating your first project](guides/creating-your-first-project.md)
-* [Creating your first task](guides/creating-your-first-task.md)
-* [Advanced permissions](guides/advanced-permissions.md)
-* [Page 1](guides/page-1.md)
+* [Clinical Forms with openEHR](guides/clinical-forms-with-openehr.md)
+* [Managing FHIR Resources](guides/managing-fhir-resources.md)
+* [Linking openEHR and FHIR](guides/linking-openehr-and-fhir.md)
+* [Packaging and Deploying](guides/packaging-and-deploying.md)
 
-## Fundamentals
+## tutorials
 
-* [Projects](fundamentals/projects.md)
-* [Members](fundamentals/members.md)
-* [Task Lists](fundamentals/task-lists.md)
-* [Tasks](fundamentals/tasks.md)
-
-## Use Cases
-
-* [For Designers](use-cases/for-designers/README.md)
-  * [Figma Integration](use-cases/for-designers/figma-integration.md)
-* [For Engineers](use-cases/for-engineers/README.md)
-  * [GitHub Integration](use-cases/for-engineers/github-integration.md)
-* [For Support](use-cases/for-support/README.md)
-  * [Intercom Integration](use-cases/for-support/intercom-integration.md)
-
-## Extras
-
-* [Keyboard Shortcuts](extras/keyboard-shortcuts.md)
+* [Simple OPD Application](tutorials/simple-opd-application/README.md)
+  * [Preparation](tutorials/simple-opd-application/preparation.md)
+  * [Svelte](tutorials/simple-opd-application/svelte.md)
+  * [Angular](tutorials/simple-opd-application/angular.md)
+  * [VueJS](tutorials/simple-opd-application/vuejs.md)
+  * [Django](tutorials/simple-opd-application/django.md)
+  * [Express](tutorials/simple-opd-application/express.md)
