@@ -32,7 +32,7 @@ It's always going to be harder to build applications that comply with standards.
 
 However, by leveraging on standards, and by separating your application from the data you can do something magical ✨. Your application can now **just do one thing really well**, and let the other apps handle all the other requirements.
 
-![](.gitbook/assets/image.png)
+![](<.gitbook/assets/image (4).png>)
 
 We try to make it easier to build and ship applications that comply with standards by using and building open-source technology.
 
