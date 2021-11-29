@@ -8,10 +8,18 @@ description: Using Medblocks UI
 **Good to know:** your product docs aren't just a reference of all your features! use them to encourage folks to perform certain actions and discover the value in your product.
 {% endhint %}
 
-## The basics
+### Download archetypes needed for the form from Clinical Knowledge Manager (CKM)
 
-Projects are containers for task lists. Think of them as a library for everything your team needs to get done to complete or ship a project.
+Archetypes needed for your system can be scoped out from openEHR's Clinical Knowledge Manager website and downloaded. Download the Archetype files in ADL format and make sure to include at least one Root Archetype.
 
-## Creating a project
+[Clinical Knowledge Manager](https://ckm.openehr.org/ckm)
 
-Hit the big '+' button in your sidebar and select 'New Project' from the menu that pops up. Give your project a name, and you're good to go!
+![Downloading Archetypes in CMK](<../.gitbook/assets/image (3).png>)
+
+### Create a new repository in Archetype Designer
+
+Archetype Designer is a tool provided by Better to create templates and archetypes. If you cannot find an archetype specific to your needs, you can create one on Archetype Designer.
+
+[Archetype Designer](https://tools.openehr.org/designer/#/)
+
+![Creating a new Repository in Archetype Designer](<../.gitbook/assets/image (2).png>)
