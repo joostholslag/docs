@@ -10,7 +10,7 @@ Medblocks provides an opinionated way to build and ship modern healthcare applic
 
 Let's say you want to build a telemedicine application for hospitals. You start off by using a database like MongoDB and your language of choice and start working on things like video conferencing and booking appointments - things essential to your app. You finally launch your app, and hospitals start using it! 🎉
 
-Over time, you realize that your users ask for more - "Can you add the ability to record the patient's condition?", "What about payments and accounting?". Before you know it, your "telemedicine application" now supports the workflow of the entire hospital. Since time and resources are limited, these "add-on" features will be an afterthought. The result - **frustrated **practitioners and **overworked **you.
+Over time, you realize that your users ask for more - "Can you add the ability to record the patient's condition?", "What about payments and accounting?". Before you know it, your "telemedicine application" now supports the workflow of the entire hospital. Since time and resources are limited, these "add-on" features will be an afterthought. The result - **frustrated** practitioners and **overworked** you.
 
 <mark style="color:blue;">**Problem 1**</mark><mark style="color:blue;">: Scope creep is very common in healthcare. One app cannot do it all.</mark>
 
