@@ -6,7 +6,7 @@ description: The philosophy behind building healthcare applications using Medblo
 
 Medblocks provides an opinionated way to build and ship modern healthcare applications. It leverages Health IT standards as well as best practices in software development to create reusable applications. We build and leverage open-source technology to make it possible for anyone to build amazing clinical experiences.
 
-### Why?
+## Why?
 
 Let's say you want to build a telemedicine application for hospitals. You start off by using a database like MongoDB and your language of choice and start working on things like video conferencing and booking appointments - things essential to your app. You finally launch your app, and hospitals start using it! 🎉
 
@@ -26,7 +26,7 @@ There are standards for capturing healthcare data in a standardized way like ope
 
 <mark style="color:blue;">**Problem 2**</mark><mark style="color:blue;">: Capturing standardized data in healthcare is hard.</mark>
 
-### The solution
+## The solution
 
 It's always going to be harder to build applications that comply with standards.
 
@@ -36,29 +36,24 @@ However, by leveraging on standards, and by separating your application from the
 
 We try to make it easier to build and ship applications that comply with standards by using and building open-source technology.
 
-### Quick Starts:
+## Quick Starts
 
-You can use Medblocks to get the whole stack running. It is a set of microservices that can help separate the data from the application. These include Clinical Data Repositories, Terminology Servers as well as Authentication, and Access Control.
+### Medblocks
 
-{% hint style="info" %}
-The Medblocks stack is ever-evolving. We know that there are a few essential ingredients missing from our stack like DICOMWeb, HL7v2 engine, and an Object Storage System for storing blobs. These will be addressed in the future. Until then, you're free to use it with other backing services.
-{% endhint %}
+The Medblocks project is responsible for handling and running the microservices necessary to deploy healthcare applications. It provides multiple APIs based on open standards like openEHR, FHIR, and OAuth2 to authenticate and communicate with applications. Medblocks relies on containerization technology to provide consistent deployments. So whether you deploy using docker-compose on your local machine for testing or use a Kubernetes cluster in production, you can expect it to behave the same.
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
-Medblocks UI is a collection of Web Components and tools that integrate with the Medblocks stack and help you capture structured data.
+Get Medblocks running on your local machine with our quick start guide here:
 
 {% content-ref url="broken-reference" %}
 [Broken link](broken-reference)
 {% endcontent-ref %}
 
+### Medblocks UI
 
+Medblocks UI is a library of [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web\_Components) that helps build user interfaces that interact directly with the APIs based on open standards. It can be used in both [front-end frameworks](https://custom-elements-everywhere.com) and in back-end templates. It works well with Medblocks, but you can also use it with your own services like a managed openEHR CDR or a FHIR server, as long as it exposes standard APIs. Medblocks UI primarily helps with creating openEHR compositions and FHIR resources. It also happens to integrate with the SNOMED CT terminology API directly for some components like search, so that you can deliver value in your applications faster.
 
-### Tutorials:
+Get up and running with Medblocks UI web components:
 
-{% content-ref url="tutorials/simple-opd-application/" %}
-[simple-opd-application](tutorials/simple-opd-application/)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
-
