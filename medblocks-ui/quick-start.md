@@ -110,10 +110,10 @@ Congratulations! You now have a working installation of Medblocks UI!
 
 ### Next steps
 
-To convert your openEHR template into a user interface, check out the Medblocks UI VSCode extension.
+To convert your openEHR template into a user interface, check out the full guide:
 
-{% content-ref url="vscode-extension.md" %}
-[vscode-extension.md](vscode-extension.md)
+{% content-ref url="../guides/clinical-forms-with-openehr.md" %}
+[clinical-forms-with-openehr.md](../guides/clinical-forms-with-openehr.md)
 {% endcontent-ref %}
 
 Or continue reading to learn more about how to use Medblocks UI with your favorite frameworks.
