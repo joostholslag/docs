@@ -6,12 +6,6 @@
 
 * [Quick Start](medblocks/quick-start.md)
 * [Concepts](medblocks/concepts.md)
-* [OAuth2 with SMART](medblocks/oauth2-with-smart.md)
-* [openEHR](medblocks/openehr.md)
-* [FHIR](medblocks/fhir.md)
-* [SNOMED CT](medblocks/snomed-ct.md)
-* [Access Control](medblocks/access-control.md)
-* [Containers](medblocks/containers.md)
 
 ## Medblocks UI
 
@@ -21,7 +15,6 @@
 * [openEHR Compositions](medblocks-ui/openehr-compositions.md)
 * [FHIR Resources](medblocks-ui/fhir-resources.md)
 * [SNOMED Terminology](medblocks-ui/snomed-terminology.md)
-* [Authentication](medblocks-ui/authentication.md)
 
 ## Guides
 
