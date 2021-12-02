@@ -28,7 +28,7 @@ Archetype Designer is a tool provided by Better to create templates and archetyp
 
 Open the newly created Repository, click the import button and select all the archetypes downloaded and click Upload All to upload the archetypes. You can also **directly upload the .zip file** you downloaded in the bulk exoprt process.
 
-![Archetypes Imported in the Repository](<../.gitbook/assets/image (11).png>)
+![Archetypes Imported in the Repository](<../.gitbook/assets/image (11) (1).png>)
 
 ### Create a new template
 

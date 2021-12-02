@@ -27,7 +27,5 @@ Wait for a couple of minutes for all the different services to start. You can ch
 
 1. FHIR Capability Statement - [http://localhost/fhir/metadata](http://localhost/fhir/metadata)
 2. EHRBase Swagger UI - [http://localhost/ehrbase/swagger-ui.html](http://localhost/ehrbase/swagger-ui.html)
-3. FHIR Capability Statement - [http://localhost/fhir/metadata](http://localhost/fhir/metadata)
-4. EHRBase Swagger UI - [http://localhost/ehrbase/swagger-ui.html](http://localhost/ehrbase/swagger-ui.html)
 
 You now have a working instance of Medblocks running! 🎉

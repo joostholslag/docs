@@ -1,2 +1,0 @@
-# SNOMED Terminology
-

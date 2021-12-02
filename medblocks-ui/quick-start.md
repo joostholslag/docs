@@ -99,6 +99,7 @@ Upon submitting the form, we usually need to perform some action like posting to
 // Pure javascript version of JQuery's $('document').ready
 document.addEventListener("DOMContentLoaded", ()=>{
     var form = document.getElementById("form");
+    // Listen for mb-submit event
     form.addEventListner("mb-submit", (event)=>{console.log(event.detail)})
 });
 </script>
@@ -128,10 +129,10 @@ Now let's try to bind some data back into a blank form. This is especially usefu
 // Pure javascript version of JQuery's $('document').ready
 document.addEventListener("DOMContentLoaded", ()=>{
     var form = document.getElementById("form");
-    form.addEventListner("mb-submit", (event)=>{console.log(event.detail)})
+    // Import openEHR flat compositions
     form.import({"name": "This data was already present"})
 });
-</script>ht
+</script>
 ```
 
 Congratulations! You now know the basics of Medblocks UI!

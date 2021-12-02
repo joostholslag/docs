@@ -11,10 +11,9 @@
 
 * [Quick Start](medblocks-ui/quick-start.md)
 * [Concepts](medblocks-ui/concepts.md)
+* [Terminology integration](medblocks-ui/terminology-integration.md)
+* [Data Format Plugins](medblocks-ui/data-format-plugins.md)
 * [VSCode Extension](medblocks-ui/vscode-extension.md)
-* [openEHR Compositions](medblocks-ui/openehr-compositions.md)
-* [FHIR Resources](medblocks-ui/fhir-resources.md)
-* [SNOMED Terminology](medblocks-ui/snomed-terminology.md)
 
 ## Guides
 
