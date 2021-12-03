@@ -4,7 +4,61 @@ description: >-
   as FHIR through Plugins
 ---
 
-# Data Format Plugins
+# Data Formats
+
+## Supported formats
+
+Medblocks UI can be used with multiple output and input formats. Here are some of the currently supported targets.
+
+### openEHR simSDT FLAT
+
+By default the `mb-form` exports data according to the [openEHR simSDT data format](https://specifications.openehr.org/releases/ITS-REST/latest/simplified\_data\_template.html#\_json\_formats). The paths are automatically generated from the openEHR web template by the [VSCode extension](vscode-extension.md) and the  `path` attribute are set for the custom elements. Once the data is filled out in these fields, the internal data property gets populated. These are then serialized to the simSDT format when the submit button is clicked.
+
+`mb-context` elements are smartly populated during submit. Things like time, event, category, setting, language, encoding are auto-populated. This can be overridden by setting the `ctx` property of `mb-form`.
+
+### FHIR
+
+{% hint style="warning" %}
+FHIR format and paths are experimental and might undergo breaking changes.
+{% endhint %}
+
+`<mb-fhir-form>` supports translation of paths and Medblocks UI components into FHIR resources and Questionnaires.
+
+For example, the following representation in HTML:
+
+```html
+<mb-fhir-form>
+  <mb-context path="resourceType" bind="Patient"></mb-context>
+  <mb-input label="Name" path="name[0].given[0]"></mb-input>
+  <mb-date label="Date of birth" path="birthDate"></mb-date>
+  <mb-buttons datatype="code" label="Gender" path="gender">
+    <mb-option value="male" label="Male"></mb-option>
+    <mb-option value="female" label="Female"></mb-option>
+    <mb-option value="other" label="Other"></mb-option>
+  </mb-buttons>
+</mb-fhir-form>
+```
+
+can output the following FHIR resource when submitted:
+
+```json
+{
+    "resourceType": "Patient",
+    "name": [{
+                    "given": ["My Name"]
+            }],
+    "birthDate": "2000-03-02",
+    "gender": "male"
+}
+```
+
+Since there are two target outputs for Coded Text in FHIR - `CodedText` and `code`, these need to be explicitly stated in the `datatype` attribute - eg: in `mb-buttons` for `gender`.&#x20;
+
+For a more detailed tutorial, follow this video:
+
+{% embed url="https://www.youtube.com/watch?v=pCp7O5OptzY" %}
+
+## Writing your own plugins
 
 Medblocks UI relies on a plugin mechanism to handle multiple data types. The `mb-form` web component has a `plugin` property that can be replaced by any other class with the following interface:
 
@@ -20,8 +74,6 @@ export interface MbPlugin {
 ```
 
 By default, `mb-form` uses the [openEHRFlat plugin](https://github.com/medblocks/medblocks-ui/blob/ef35f7755450d1d56a35627ec8b0736c4e7b242e/src/medblocks/form/form.ts#L47). There is also a [FHIR plugin](https://github.com/medblocks/medblocks-ui/blob/master/src/medblocks/form/plugins/fhir.ts) available to handle FHIR elements. This is the default plugin while using the `mb-fhir-form` element.
-
-## Writing your own plugins
 
 You can write your own plugins by writing the following methods:
 

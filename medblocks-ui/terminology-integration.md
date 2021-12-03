@@ -1,8 +1,8 @@
 # Terminology integration
 
-![](<../.gitbook/assets/image (12).png>)
-
 Medblocks UI supports searching on SNOMED using the `mb-search` component.
+
+![mb-search component](<../.gitbook/assets/image (12).png>)
 
 ### Usage
 

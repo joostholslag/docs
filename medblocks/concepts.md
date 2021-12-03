@@ -6,8 +6,6 @@ description: Different components of the Medblocks stack
 
 Medblocks is a set of microservices that can be run individually or together. Each service is a docker container that can be configured using environment variables. Most of the services are directly built from a source repository and can be updated by updating the docker image.
 
-Medblocks is a set of microservices that can be run individually or together. Each service is a docker container that can be configured using environment variables. Most of the services are directly built from a source repository and can be updated by updating the docker image.
-
 Below are the main components of Medblocks, each handled by one or more containers.
 
 ### Authentication
@@ -18,7 +16,7 @@ Relies on the [ORY Hydra](https://www.ory.sh/hydra/) and [ORY Kratos](https://ww
 
 ### Authorization
 
-It is responsible for answering the question: “Does this user have access to do this?”.
+It is responsible for answering the question: “**Does this user have access to do this**?”.
 
 Relies on [ORY Keto](https://www.ory.sh/keto/) and [ORY Oathkeeper](https://www.ory.sh/oathkeeper) to manage user access rules and enforce authorization. Services like FHIR and openEHR also use ORY Keto to keep track of access control lists. This also includes middleware containers that translate the access control API between these different services.
 

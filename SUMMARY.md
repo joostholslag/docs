@@ -1,18 +1,21 @@
 # Table of contents
 
-* [Introduction](README.md)
-
 ## Medblocks
 
-* [Quick Start](medblocks/quick-start.md)
+* [Quick Start](README.md)
 * [Concepts](medblocks/concepts.md)
+
+***
+
+* [Introduction](<README (1).md>)
 
 ## Medblocks UI
 
 * [Quick Start](medblocks-ui/quick-start.md)
-* [Concepts](medblocks-ui/concepts.md)
+* [Concepts](medblocks-ui/concepts/README.md)
+  * [Web Components](https://github.com/medblocks/medblocks-ui)
 * [Terminology integration](medblocks-ui/terminology-integration.md)
-* [Data Format Plugins](medblocks-ui/data-format-plugins.md)
+* [Data Formats](medblocks-ui/data-formats.md)
 * [VSCode Extension](medblocks-ui/vscode-extension.md)
 
 ## Guides
