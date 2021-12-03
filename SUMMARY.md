@@ -1,13 +1,11 @@
 # Table of contents
 
+* [Introduction](README.md)
+
 ## Medblocks
 
-* [Quick Start](README.md)
+* [Quick Start](<README (1).md>)
 * [Concepts](medblocks/concepts.md)
-
-***
-
-* [Introduction](<README (1).md>)
 
 ## Medblocks UI
 
