@@ -2,7 +2,7 @@
 
 FHIR patient resource can be used to store the demographic data of Patients and can be linked with an EHR created in the openEHR. FHIR provides us endpoints for posting resources to their server.
 
-To link FHIR resource and openEHR we can use an exclusive UUID. The ID present in the response JSON after posting a FHIR patient resource can also be used to create an Electronic Health Record with the same ID.
+To link FHIR resource and openEHR we can use an exclusive UUID. The ID present in the response JSON after posting a FHIR patient resource can be taken out and used to create an Electronic Health Record by using a PUT request.
 
 To do this, first create an axios instance for FHIR server and openEHR server
 
@@ -26,7 +26,7 @@ if (resp.status == 201) {
       }
 ```
 
-Use this id to create a new EHR by sending a put request to the openEHR server
+Use this id to create a new EHR by sending a PUT request to the openEHR server
 
 ```
 const respEHR = await openehr.put(`/ehr/${ehrId}`);
