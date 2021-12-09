@@ -1,2 +1,0 @@
-# Simple OPD Application
-
