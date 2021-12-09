@@ -132,11 +132,11 @@ To add TailwindCSS to your project and customize, follow this guide \
 
 ![UI improved by adding CSS](<../.gitbook/assets/image (3).png>)
 
+### Posting the compositions to the openEHR server
+
 {% hint style="info" %}
 Don't forget to post the template to the openEHR server before posting compositions.
 {% endhint %}
-
-### Posting the compositions to the openEHR server
 
 To post the Clinical data of a Patients to the CDR, use axios package and create a new instance of axios for the openEHR server.
 
@@ -155,10 +155,9 @@ openehr.post("/composition", e.detail, {
       })
 ```
 
-The variables to be set are :\
-**templateId** contains the template ID of the composition\
-**ehrId** contains the EHR UUID of the patient\
-**e** is the instance of the form element
+1\)  **templateId** contains the template ID of the composition\
+2\) **ehrId** contains the EHR UUID of the patient\
+3\) **e** is the instance of the form element
 
 You can now Start posting compositions to the openEHR server. To fetch data from the openEHR server, use Archetype Query Language (AQL)
 
