@@ -1,9 +1,5 @@
 # Linking openEHR and FHIR
 
-{% hint style="info" %}
-**Good to know:** your product docs aren't just a reference of all your features! use them to encourage folks to perform certain actions and discover the value in your product.
-{% endhint %}
-
 FHIR patient resource can be used to store the demographic data of Patients and can be linked with an EHR created in the openEHR. FHIR provides us endpoints for posting resources to their server.
 
 To link FHIR resource and openEHR we can use an exclusive UUID. The ID present in the response JSON after posting a FHIR patient resource can also be used to create an Electronic Health Record with the same ID.
