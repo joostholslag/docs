@@ -1,7 +1,3 @@
----
-description: Get started with an open-source UI library for openEHR based interfaces.
----
-
 # Quick Start
 
 ## Introduction
@@ -141,8 +137,8 @@ Congratulations! You now know the basics of Medblocks UI!
 
 Check out the full guide to learn how to create an openEHR template and build a single-page application with it:
 
-{% content-ref url="../guides/clinical-forms-with-openehr.md" %}
-[clinical-forms-with-openehr.md](../guides/clinical-forms-with-openehr.md)
+{% content-ref url="../guides/building-clinical-apps-with-openehr.md" %}
+[building-clinical-apps-with-openehr.md](../guides/building-clinical-apps-with-openehr.md)
 {% endcontent-ref %}
 
 Or continue reading to learn more about Medblocks UI and how to use it with your favorite frameworks.

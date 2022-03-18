@@ -18,5 +18,5 @@
 
 ## Guides
 
-* [Clinical Forms with openEHR](guides/clinical-forms-with-openehr.md)
+* [Building Clinical Apps with openEHR](guides/building-clinical-apps-with-openehr.md)
 * [Linking openEHR and FHIR](guides/linking-openehr-and-fhir.md)

@@ -1,10 +1,54 @@
 ---
-description: A step by step guide from CKM to Forms using Medblocks UI
+description: >-
+  A step by step guide on openEHR - from CKM to Forms using Medblocks UI and
+  EHRbase
 ---
 
-# Clinical Forms with openEHR
+# Building Clinical Apps with openEHR
 
-## Setting up the openEHR Template
+## Why?
+
+openEHR provides a robust way to build any clinical application while separating the data from the application logic. Applications come and go, but healthcare data is for life.
+
+The way openEHR achieves this is by defining archetypes and templates - think of them like database schemas, but with the ability to model data on 2 levels.
+
+### Archetypes
+
+The first level is the **archetype** - A maximal dataset that's agreed upon by a global community of clinicians and informaticians. Think of these as lego bricks that have been crafted to perfection over years of trial and error. For instance, the [blood\_pressure.v2](https://ckm.openehr.org/ckm/archetypes/1013.1.3574/mindmap) archetype you see below has gone through almost multiple revisions and has about 23 data points currently. This represents almost anything you will need to capture when it comes to the concept of "blood pressure".
+
+![Archeypes are like lego bricks](<../.gitbook/assets/image (2).png>)
+
+### Templates
+
+The second level is the **template** - The same archetypes can be put together in different ways according to the situation. Here, you can get creative and cut out data points from the archetypes you don't need and include others you do. For example, a General Practitioner may only need the systolic and diastolic data points from the blood pressure archetype, whereas a cardiologist may need the position, location of measurement, and a 24-hour average.
+
+These variations along with many other things can be expressed in a template.
+
+![Templates are the end products of putting archetypes together](<../.gitbook/assets/image (15).png>)
+
+### Clinical Data Repository
+
+The templates are posted to an openEHR Clinical Data Repository through its REST API. Open-source openEHR CDRs like [EHRbase](https://ehrbase.org) are becoming very popular for this.
+
+The applications that need to persist information then use the same REST API to commit data as compositions and can query the data using the [AQL](https://specifications.openehr.org/releases/QUERY/latest/AQL.html) API.
+
+The advantage of this approach is that the meaning of each concept, for example, "blood pressure" still remains. AQL can be used later to get all blood pressure values - limiting to both within a template or otherwise. This allows applications to interoperate without knowing about each other. They just need to use the correct archetypes to record clinical data.&#x20;
+
+More importantly, the alternative - which is to store the clinical data in a format specific to the application is prevented. This prevents data silos from forming in the first place and completely avoids the expensive "mapping work" to make these applications interoperable.
+
+You can find more views on why openEHR is the right decision for clinical data in these articles below.
+
+{% embed url="https://medium.com/@alastairallen/why-openehr-is-eating-healthcare-e28bd792c50c" %}
+A blog post by **Alastair Allen,** CTO of Better
+{% endembed %}
+
+{% embed url="https://echalliance.com/what-is-openehr-and-why-is-it-important" %}
+NHS Whales - **technical evaluation into openEHR**
+{% endembed %}
+
+
+
+## Creating an openEHR Template
 
 Before we get started with the code, we need to create an openEHR template. Let's do that first.
 
@@ -22,7 +66,7 @@ Archetype Designer is a tool provided by Better to create templates and archetyp
 
 {% embed url="https://tools.openehr.org" %}
 
-![Creating a new Repository in Archetype Designer](<../.gitbook/assets/image (2) (1).png>)
+![Creating a new Repository in Archetype Designer](<../.gitbook/assets/image (2) (1) (1).png>)
 
 ### Import all the archetypes downloaded to the repository
 
@@ -50,11 +94,17 @@ After you are done editing your template, click export and select "Web Template"
 
 Export the template in **OPT format** also, you will need to post this file to openEHR server for posting compositions.
 
-![Exporting the template](<../.gitbook/assets/image (2).png>)
+![Exporting the template](<../.gitbook/assets/image (2) (1).png>)
 
 For more information on how to create an openEHR template, watch this video:
 
 {% embed url="https://www.youtube.com/watch?v=vlTJR2AbO0Y" %}
+
+## Setting up the openEHR CDR
+
+EHRbase can be set up either by using the [Medblocks](<../README (1).md>) or by following [EHRbase's official documentation](https://ehrbase.readthedocs.io/en/latest/).
+
+Once set up, you should have access to the openEHR and ECIS REST API on your localhost at [http://localhost/ehrbase/swagger-ui.html](http://localhost/ehrbase/swagger-ui.html)
 
 ## Setting up the Application
 
@@ -107,7 +157,7 @@ import "medblocks-ui/dist/shoelace";
 
 Create a folder with the name "templates" in the base directory of your app and paste your exported web template (JSON) into that folder.
 
-![Using Medblocs-UI extensions](<../.gitbook/assets/image (6).png>)
+![Using Medblocs-UI extensions](<../.gitbook/assets/image (6) (1).png>)
 
 ### Use Medblocks Extension to generate JavaScript code for a Clinical form
 
@@ -165,3 +215,6 @@ To see a collection of example forms, check out the repository below:
 
 {% embed url="https://github.com/medblocks/all-forms" %}
 
+You can also follow this video for a better understanding:
+
+{% embed url="https://www.youtube.com/watch?v=ZzPCy-5mazc" %}
