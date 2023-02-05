@@ -50,7 +50,7 @@ Get Medblocks running on your local machine with our quick start guide here:
 
 ### Medblocks UI
 
-Medblocks UI is a library of [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web\_Components) that helps build user interfaces that interact directly with the APIs based on open standards. It can be used in both [front-end frameworks](https://custom-elements-everywhere.com) and in back-end templates. It works well with Medblocks, but you can also use it with your own services like a managed openEHR CDR or a FHIR server, as long as it exposes standard APIs. Medblocks UI primarily helps with creating openEHR compositions and FHIR resources. It also happens to integrate with the SNOMED CT terminology API directly for some components like search, so that you can deliver value in your applications faster.
+Medblocks UI is a library of [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web\_Components) that helps build user interfaces that interact directly with the APIs based on open standards. It can be used in both [front-end frameworks](https://custom-elements-everywhere.com/) and in back-end templates. It works well with Medblocks, but you can also use it with your own services like a managed openEHR CDR or a FHIR server, as long as it exposes standard APIs. Medblocks UI primarily helps with creating openEHR compositions and FHIR resources. It also happens to integrate with the SNOMED CT terminology API directly for some components like search, so that you can deliver value in your applications faster.
 
 Get up and running with Medblocks UI web components:
 

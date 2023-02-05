@@ -2,15 +2,15 @@
 
 ## Introduction
 
-Medblocks UI is a set of Web Components. They can be used in any browser that supports them. You can also use it with front-end frameworks to build complex single-page applications. They can also be freely be used in back-end templates.
+Medblocks UI is a set of Web Components for building applications on openEHR. They can be used in any browser that supports them. You can also use it with front-end frameworks to build complex single-page applications. They can also be freely be used in back-end templates.
 
 {% hint style="info" %}
-Some front-end frameworks support custom elements [better than others](https://custom-elements-everywhere.com).
+Some front-end frameworks support custom elements [better than others](https://custom-elements-everywhere.com/).
 {% endhint %}
 
 ## Installation
 
-Medblocks UI can be used with a CDN script or with a modern bundler like [Vite](https://vitejs.dev) or [Snowpack](https://www.snowpack.dev).
+Medblocks UI can be used with a CDN script or with a modern bundler like [Vite](https://vitejs.dev/) or [Snowpack](https://www.snowpack.dev/).
 
 ### Using a CDN
 

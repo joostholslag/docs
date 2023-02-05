@@ -2,11 +2,6 @@
 
 * [Introduction](README.md)
 
-## Medblocks
-
-* [Quick Start](<README (1).md>)
-* [Concepts](medblocks/concepts.md)
-
 ## Medblocks UI
 
 * [Quick Start](medblocks-ui/quick-start.md)

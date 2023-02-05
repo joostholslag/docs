@@ -4,7 +4,7 @@ description: Introduction to Web Components and Medblocks UI
 
 # Concepts
 
-Medblocks UI is built using [Lit](https://lit.dev), a framework for web components. Here are some basic concepts to understand how to use these elements.
+Medblocks UI is built using [Lit](https://lit.dev/), a framework for web components. Here are some basic concepts to understand how to use these elements.
 
 
 
@@ -56,7 +56,7 @@ However, in most modern frameworks, this issue has been addressed.
 <mb-form ctx={data} />
 ```
 
-For a more definite list of how to set properties and attributes in your favorite framework, check out the [Custom Elements Everywhere](https://custom-elements-everywhere.com) website.
+For a more definite list of how to set properties and attributes in your favorite framework, check out the [Custom Elements Everywhere](https://custom-elements-everywhere.com/) website.
 
 ## Listening to events
 
@@ -104,5 +104,5 @@ However, most frameworks have a sophisticated way to listen to events.
 </mb-form>
 ```
 
-For a more definite list of how to listen to events in your favorite framework, check out the [Custom Elements Everywhere](https://custom-elements-everywhere.com) website.
+For a more definite list of how to listen to events in your favorite framework, check out the [Custom Elements Everywhere](https://custom-elements-everywhere.com/) website.
 

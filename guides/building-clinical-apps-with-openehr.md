@@ -28,7 +28,7 @@ These variations along with many other things can be expressed in a template.
 
 ### Clinical Data Repository
 
-The templates are posted to an openEHR Clinical Data Repository through its REST API. Open-source openEHR CDRs like [EHRbase](https://ehrbase.org) are becoming very popular for this.
+The templates are posted to an openEHR Clinical Data Repository through its REST API. Open-source openEHR CDRs like [EHRbase](https://ehrbase.org/) are becoming very popular for this.
 
 The applications that need to persist information then use the same REST API to commit data as compositions and can query the data using the [AQL](https://specifications.openehr.org/releases/QUERY/latest/AQL.html) API.
 
@@ -102,7 +102,7 @@ For more information on how to create an openEHR template, watch this video:
 
 ## Setting up the openEHR CDR
 
-EHRbase can be set up either by using the [Medblocks](<../README (1).md>) or by following [EHRbase's official documentation](https://ehrbase.readthedocs.io/en/latest/).
+EHRbase can be set up either by using the [Medblocks](broken-reference) or by following [EHRbase's official documentation](https://ehrbase.readthedocs.io/en/latest/).
 
 Once set up, you should have access to the openEHR and ECIS REST API on your localhost at [http://localhost/ehrbase/swagger-ui.html](http://localhost/ehrbase/swagger-ui.html)
 
